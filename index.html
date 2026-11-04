@@ -1,1 +1,668 @@
+<!DOCTYPE html>
+<html lang="id">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MY LIFE</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar" id="sidebar">
+
+    <div class="brand">
+        <h2>MY<span>LIFE.</span></h2>
+        <small>PERSONAL SPACE</small>
+    </div>
+
+    <div class="profile-sidebar">
+
+        <img src="img/profile.jpg" alt="Profile">
+
+        <div>
+            <h4>My Personal Space</h4>
+            <span>Welcome to my world</span>
+        </div>
+
+    </div>
+
+    <p class="menu-label">MENU</p>
+
+    <nav class="menu">
+
+        <a href="#home" class="active">
+            <i class="fa-solid fa-house"></i>
+            <span>Dashboard</span>
+        </a>
+
+        <a href="#about">
+            <i class="fa-solid fa-user"></i>
+            <span>About Me</span>
+        </a>
+
+        <a href="#daily">
+            <i class="fa-solid fa-calendar-day"></i>
+            <span>Daily Activities</span>
+        </a>
+
+        <a href="#journal">
+            <i class="fa-solid fa-book-open"></i>
+            <span>My Journal</span>
+        </a>
+
+        <a href="#goals">
+            <i class="fa-solid fa-bullseye"></i>
+            <span>My Goals</span>
+        </a>
+
+        <a href="#motivation">
+            <i class="fa-solid fa-heart"></i>
+            <span>Motivation</span>
+        </a>
+
+        <a href="#gallery">
+            <i class="fa-solid fa-images"></i>
+            <span>Memories</span>
+        </a>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+
+        <div class="sidebar-quote">
+            <i class="fa-solid fa-quote-left"></i>
+
+            <p>
+                Your life is your own story.
+                Make every chapter meaningful.
+            </p>
+        </div>
+
+        <small>© 2026 MY LIFE</small>
+
+    </div>
+
+</aside>
+
+
+<!-- MAIN CONTENT -->
+
+<main class="main-content">
+
+
+<!-- TOPBAR -->
+
+<header class="topbar">
+
+    <button class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="topbar-title">
+        <h3>Personal Dashboard</h3>
+        <p>Your little space in this world.</p>
+    </div>
+
+    <div class="topbar-right">
+
+        <span class="status">
+            <span class="status-dot"></span>
+            YOUR PERSONAL SPACE
+        </span>
+
+    </div>
+
+</header>
+
+
+<!-- DASHBOARD -->
+
+<section class="dashboard-section" id="home">
+
+    <div class="welcome-banner">
+
+        <div class="welcome-content">
+
+            <span class="welcome-label">
+                <i class="fa-regular fa-sun"></i>
+                YOUR DAILY SPACE
+            </span>
+
+            <h1 id="greeting">Welcome Back.</h1>
+
+            <p id="greetingMessage">
+                Take your time. Enjoy your journey.
+            </p>
+
+            <div class="welcome-date">
+
+                <span id="currentDate"></span>
+
+                <span class="date-divider">•</span>
+
+                <span id="currentTime"></span>
+
+            </div>
+
+        </div>
+
+        <div class="welcome-decoration">
+            <i class="fa-solid fa-moon"></i>
+        </div>
+
+    </div>
+
+
+    <!-- QUICK INFORMATION -->
+
+    <div class="quick-grid">
+
+        <div class="quick-card">
+
+            <div class="quick-icon purple">
+                <i class="fa-solid fa-calendar-check"></i>
+            </div>
+
+            <div>
+                <span>TODAY</span>
+                <h3 id="todayName">Monday</h3>
+                <small>Your new beginning.</small>
+            </div>
+
+        </div>
+
+
+        <div class="quick-card">
+
+            <div class="quick-icon blue">
+                <i class="fa-solid fa-book"></i>
+            </div>
+
+            <div>
+                <span>MY JOURNAL</span>
+                <h3 id="journalCount">0 Entries</h3>
+                <small>Your daily stories.</small>
+            </div>
+
+        </div>
+
+
+        <div class="quick-card">
+
+            <div class="quick-icon orange">
+                <i class="fa-solid fa-bullseye"></i>
+            </div>
+
+            <div>
+                <span>MY GOALS</span>
+                <h3 id="goalCount">0 Goals</h3>
+                <small>Keep moving forward.</small>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- DAILY THOUGHT -->
+
+    <div class="thought-card">
+
+        <div>
+            <span class="section-overline">A THOUGHT FOR TODAY</span>
+
+            <h2 id="dailyThought">
+                Every day is another opportunity to grow.
+            </h2>
+
+            <p>
+                You don't need to have everything figured out.
+                Just take one step at a time.
+            </p>
+        </div>
+
+        <i class="fa-solid fa-feather-pointed"></i>
+
+    </div>
+
+
+</section>
+
+
+<!-- ABOUT ME -->
+
+<section class="content-section" id="about">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-overline">GET TO KNOW ME</span>
+            <h2>About Me</h2>
+            <p>A little introduction about who I am.</p>
+        </div>
+
+    </div>
+
+
+    <div class="about-card">
+
+        <div class="about-photo">
+
+            <img src="img/profile.jpg" alt="My Profile">
+
+        </div>
+
+
+        <div class="about-information">
+
+            <span class="section-overline">MY PERSONAL STORY</span>
+
+            <h2>Hello, I'm <span>[Your Name].</span></h2>
+
+            <p>
+                I'm someone who enjoys living life in my own way.
+                I believe everyone has their own story, their own
+                journey, and their own perspective on life.
+            </p>
+
+            <p>
+                Sometimes I enjoy being alone, thinking about
+                the future, learning new things, and discovering
+                what life has to offer.
+            </p>
+
+            <p>
+                This is my personal space, a place where I keep
+                my stories, thoughts, experiences, and memories.
+            </p>
+
+
+            <div class="personal-details">
+
+                <div>
+                    <span>PERSONALITY</span>
+                    <h4>Calm & Independent</h4>
+                </div>
+
+                <div>
+                    <span>INTERESTS</span>
+                    <h4>Technology & Trading</h4>
+                </div>
+
+                <div>
+                    <span>HOBBIES</span>
+                    <h4>Learning & Exploring</h4>
+                </div>
+
+                <div>
+                    <span>LIFE MOTTO</span>
+                    <h4>Keep Moving Forward.</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DAILY ACTIVITIES -->
+
+<section class="content-section" id="daily">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-overline">MY EVERYDAY ROUTINE</span>
+            <h2>Daily Activities</h2>
+            <p>A glimpse into my everyday life.</p>
+        </div>
+
+    </div>
+
+
+    <div class="activities-grid">
+
+        <div class="activity-card">
+
+            <div class="activity-top">
+                <i class="fa-solid fa-sun"></i>
+                <span>06:00 - 09:00</span>
+            </div>
+
+            <h3>Morning</h3>
+
+            <p>
+                Wake up, prepare myself, enjoy the morning
+                and get ready for a new day.
+            </p>
+
+        </div>
+
+
+        <div class="activity-card">
+
+            <div class="activity-top">
+                <i class="fa-solid fa-cloud-sun"></i>
+                <span>09:00 - 15:00</span>
+            </div>
+
+            <h3>Afternoon</h3>
+
+            <p>
+                Focus on activities, work, learning,
+                and spending time on my interests.
+            </p>
+
+        </div>
+
+
+        <div class="activity-card">
+
+            <div class="activity-top">
+                <i class="fa-solid fa-cloud-moon"></i>
+                <span>15:00 - 18:00</span>
+            </div>
+
+            <h3>Evening</h3>
+
+            <p>
+                Take a break, enjoy music, relax,
+                and spend time doing things I like.
+            </p>
+
+        </div>
+
+
+        <div class="activity-card">
+
+            <div class="activity-top">
+                <i class="fa-solid fa-moon"></i>
+                <span>18:00 - 00:00</span>
+            </div>
+
+            <h3>Night</h3>
+
+            <p>
+                Personal time, reflection, planning
+                and preparing for tomorrow.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- JOURNAL -->
+
+<section class="content-section" id="journal">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-overline">MY PERSONAL DIARY</span>
+            <h2>Daily Journal</h2>
+            <p>Write down your thoughts and experiences.</p>
+        </div>
+
+    </div>
+
+
+    <div class="journal-card">
+
+        <label for="journalInput">
+            HOW WAS YOUR DAY TODAY?
+        </label>
+
+        <textarea
+            id="journalInput"
+            placeholder="Write anything about your day...
+
+What did you do today?
+What made you happy?
+What made you think?
+What did you learn?"
+        ></textarea>
+
+
+        <div class="journal-bottom">
+
+            <span id="journalDate"></span>
+
+            <button id="saveJournal">
+                <i class="fa-solid fa-floppy-disk"></i>
+                Save Journal
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="saved-journals">
+
+        <h3>Previous Entries</h3>
+
+        <div id="journalList"></div>
+
+    </div>
+
+</section>
+
+
+<!-- GOALS -->
+
+<section class="content-section" id="goals">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-overline">MY FUTURE</span>
+            <h2>Personal Goals</h2>
+            <p>Small steps can create big changes.</p>
+        </div>
+
+    </div>
+
+
+    <div class="goal-card">
+
+        <div class="goal-input">
+
+            <input
+                type="text"
+                id="goalInput"
+                placeholder="Write a goal you want to achieve..."
+            >
+
+            <button id="addGoal">
+                <i class="fa-solid fa-plus"></i>
+                Add Goal
+            </button>
+
+        </div>
+
+
+        <div id="goalList"></div>
+
+    </div>
+
+</section>
+
+
+<!-- MOTIVATION -->
+
+<section class="content-section" id="motivation">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-overline">WHEN YOU FEEL LOST</span>
+            <h2>A Moment For Yourself</h2>
+            <p>Sometimes you just need a little reminder.</p>
+        </div>
+
+    </div>
+
+
+    <div class="motivation-card">
+
+        <i class="fa-solid fa-heart heart-icon"></i>
+
+        <h2 id="motivationTitle">
+            Feeling Lost?
+        </h2>
+
+        <p id="motivationText">
+            Take a deep breath. You don't need to solve
+            everything right now.
+        </p>
+
+        <button id="motivationButton">
+            Give Me A Reminder
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+
+    <!-- REMINDER SETTINGS -->
+
+    <div class="notification-card">
+
+        <div class="notification-info">
+
+            <div class="notification-icon">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+
+            <div>
+                <h3>Daily Notifications</h3>
+                <p>Receive reminders every morning and night.</p>
+            </div>
+
+        </div>
+
+
+        <div class="notification-times">
+
+            <span>
+                <i class="fa-solid fa-sun"></i>
+                Morning: 07:00
+            </span>
+
+            <span>
+                <i class="fa-solid fa-moon"></i>
+                Night: 21:00
+            </span>
+
+        </div>
+
+
+        <button id="enableNotification">
+            Enable Notifications
+        </button>
+
+        <p class="notification-status" id="notificationStatus">
+            Notifications are not enabled.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="content-section" id="gallery">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-overline">MY MEMORIES</span>
+            <h2>Life Gallery</h2>
+            <p>Little moments, beautiful memories.</p>
+        </div>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="img/memory1.jpg" alt="Memory 1">
+            <span>A moment in my life.</span>
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/memory2.jpg" alt="Memory 2">
+            <span>Little memories.</span>
+        </div>
+
+        <div class="gallery-item">
+            <img src="img/memory3.jpg" alt="Memory 3">
+            <span>Life goes on.</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>MY<span>LIFE.</span></h2>
+
+    <p>
+        My life, my story, my journey.
+    </p>
+
+    <div class="footer-links">
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#journal">Journal</a>
+        <a href="#gallery">Memories</a>
+
+    </div>
+
+    <small>
+        © 2026 MY LIFE. All Rights Reserved.
+    </small>
+
+</footer>
+
+
+</main>
+
+
+<!-- MOBILE OVERLAY -->
+
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
