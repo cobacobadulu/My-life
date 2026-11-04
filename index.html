@@ -6,664 +6,677 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="MY LIFE adalah ruang pribadi untuk menyimpan cerita, aktivitas harian, pemikiran, target, dan kenangan kehidupan.">
+
+    <meta name="author" content="REINY">
+
+    <meta name="theme-color" content="#ffffff">
+
     <title>KEHIDUPANKU | Ruang Pribadi</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
+    <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
-<!-- SIDEBAR -->
+    <!-- SIDEBAR -->
 
-<aside class="sidebar" id="sidebar">
+    <aside class="sidebar" id="sidebar">
 
-    <div class="brand">
-        <h2>MY<span>LIFE.</span></h2>
-        <small>RUANG PRIBADI</small>
-    </div>
-
-    <div class="profile-sidebar">
-
-        <img src="img/profile.jpg" alt="Foto Profil">
-
-        <div>
-            <h4>Ruang Pribadiku</h4>
-            <span>Selamat datang di duniaku</span>
+        <div class="brand">
+            <h2>MY<span>LIFE.</span></h2>
+            <small>RUANG PRIBADI</small>
         </div>
 
-    </div>
+        <div class="profile-sidebar">
 
-    <p class="menu-label">MENU UTAMA</p>
-
-    <nav class="menu">
-
-        <a href="#home" class="active">
-            <i class="fa-solid fa-house"></i>
-            <span>Beranda</span>
-        </a>
-
-        <a href="#about">
-            <i class="fa-solid fa-user"></i>
-            <span>Tentang Saya</span>
-        </a>
-
-        <a href="#daily">
-            <i class="fa-solid fa-calendar-day"></i>
-            <span>Aktivitas Harian</span>
-        </a>
-
-        <a href="#journal">
-            <i class="fa-solid fa-book-open"></i>
-            <span>Jurnal Pribadi</span>
-        </a>
-
-        <a href="#goals">
-            <i class="fa-solid fa-bullseye"></i>
-            <span>Target Saya</span>
-        </a>
-
-        <a href="#motivation">
-            <i class="fa-solid fa-heart"></i>
-            <span>Motivasi</span>
-        </a>
-
-        <a href="#gallery">
-            <i class="fa-solid fa-images"></i>
-            <span>Kenangan</span>
-        </a>
-
-    </nav>
-
-    <div class="sidebar-bottom">
-
-        <div class="sidebar-quote">
-            <i class="fa-solid fa-quote-left"></i>
-
-            <p>
-                Hidup adalah cerita milikmu sendiri.
-                Jadikan setiap bab memiliki makna.
-            </p>
-        </div>
-
-        <small>© 2026 MY LIFE</small>
-
-    </div>
-
-</aside>
-
-
-<!-- KONTEN UTAMA -->
-
-<main class="main-content">
-
-
-<!-- BAGIAN ATAS -->
-
-<header class="topbar">
-
-    <button class="menu-toggle" id="menuToggle">
-        <i class="fa-solid fa-bars"></i>
-    </button>
-
-    <div class="topbar-title">
-        <h3>Dasbor Pribadi</h3>
-        <p>Ruang kecil milikmu di dunia ini.</p>
-    </div>
-
-    <div class="topbar-right">
-
-        <span class="status">
-            <span class="status-dot"></span>
-            RUANG PRIBADIKU
-        </span>
-
-    </div>
-
-</header>
-
-
-<!-- BERANDA -->
-
-<section class="dashboard-section" id="home">
-
-    <div class="welcome-banner">
-
-        <div class="welcome-content">
-
-            <span class="welcome-label">
-                <i class="fa-regular fa-sun"></i>
-                RUANG HARIANKU
-            </span>
-
-            <h1 id="greeting">Selamat Datang Kembali.</h1>
-
-            <p id="greetingMessage">
-                Nikmati waktumu dan hargai setiap perjalanan hidupmu.
-            </p>
-
-            <div class="welcome-date">
-
-                <span id="currentDate"></span>
-
-                <span class="date-divider">•</span>
-
-                <span id="currentTime"></span>
-
-            </div>
-
-        </div>
-
-        <div class="welcome-decoration">
-            <i class="fa-solid fa-moon"></i>
-        </div>
-
-    </div>
-
-
-    <!-- INFORMASI SINGKAT -->
-
-    <div class="quick-grid">
-
-        <div class="quick-card">
-
-            <div class="quick-icon purple">
-                <i class="fa-solid fa-calendar-check"></i>
-            </div>
+            <img src="img/profile.jpg" alt="Foto Profil">
 
             <div>
-                <span>HARI INI</span>
-                <h3 id="todayName">Senin</h3>
-                <small>Awal yang baru.</small>
+                <h4>Ruang Pribadiku</h4>
+                <span>Selamat datang di duniaku</span>
             </div>
 
         </div>
 
+        <p class="menu-label">MENU UTAMA</p>
 
-        <div class="quick-card">
+        <nav class="menu" aria-label="Navigasi utama">
 
-            <div class="quick-icon blue">
-                <i class="fa-solid fa-book"></i>
-            </div>
+            <a href="#home" class="active">
+                <i class="fa-solid fa-house"></i>
+                <span>Beranda</span>
+            </a>
 
-            <div>
-                <span>JURNAL SAYA</span>
-                <h3 id="journalCount">0 Catatan</h3>
-                <small>Cerita keseharianmu.</small>
-            </div>
+            <a href="#about">
+                <i class="fa-solid fa-user"></i>
+                <span>Tentang Saya</span>
+            </a>
 
-        </div>
+            <a href="#daily">
+                <i class="fa-solid fa-calendar-day"></i>
+                <span>Aktivitas Harian</span>
+            </a>
 
+            <a href="#journal">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Jurnal Pribadi</span>
+            </a>
 
-        <div class="quick-card">
-
-            <div class="quick-icon orange">
+            <a href="#goals">
                 <i class="fa-solid fa-bullseye"></i>
+                <span>Target Saya</span>
+            </a>
+
+            <a href="#motivation">
+                <i class="fa-solid fa-heart"></i>
+                <span>Motivasi</span>
+            </a>
+
+            <a href="#gallery">
+                <i class="fa-solid fa-images"></i>
+                <span>Kenangan</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-quote">
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+                    Hidup adalah cerita milikmu sendiri.
+                    Jadikan setiap bab memiliki makna.
+                </p>
             </div>
 
-            <div>
-                <span>TARGET SAYA</span>
-                <h3 id="goalCount">0 Target</h3>
-                <small>Teruslah melangkah maju.</small>
+            <small>© 2026 MY LIFE</small>
+
+        </div>
+
+    </aside>
+
+
+    <!-- KONTEN UTAMA -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Buka menu"
+                aria-controls="sidebar"
+                aria-expanded="false">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <div class="topbar-title">
+                <h3>Dasbor Pribadi</h3>
+                <p>Ruang kecil milikmu di dunia ini.</p>
             </div>
 
-        </div>
+            <div class="topbar-right">
 
-    </div>
+                <span class="status">
+                    <span class="status-dot"></span>
+                    RUANG PRIBADIKU
+                </span>
 
+            </div>
 
-    <!-- PEMIKIRAN HARI INI -->
-
-    <div class="thought-card">
-
-        <div>
-            <span class="section-overline">RENUNGAN HARI INI</span>
-
-            <h2 id="dailyThought">
-                Setiap hari adalah kesempatan baru untuk berkembang.
-            </h2>
-
-            <p>
-                Kamu tidak harus memahami semuanya sekarang.
-                Cukup lakukan satu langkah kecil setiap harinya.
-            </p>
-        </div>
-
-        <i class="fa-solid fa-feather-pointed"></i>
-
-    </div>
+        </header>
 
 
-</section>
+        <!-- BERANDA -->
 
+        <section class="dashboard-section" id="home">
 
-<!-- TENTANG SAYA -->
+            <div class="welcome-banner">
 
-<section class="content-section" id="about">
+                <div class="welcome-content">
 
-    <div class="section-heading">
+                    <span class="welcome-label">
+                        <i class="fa-regular fa-sun"></i>
+                        RUANG HARIANKU
+                    </span>
 
-        <div>
-            <span class="section-overline">KENALI DIRIKU</span>
-            <h2>Tentang Saya</h2>
-            <p>Sedikit perkenalan tentang siapa diriku.</p>
-        </div>
+                    <h1 id="greeting">Selamat Datang Kembali.</h1>
 
-    </div>
+                    <p id="greetingMessage">
+                        Nikmati waktumu dan hargai setiap perjalanan hidupmu.
+                    </p>
 
+                    <div class="welcome-date">
+                        <span id="currentDate"></span>
+                        <span class="date-divider">•</span>
+                        <span id="currentTime"></span>
+                    </div>
 
-    <div class="about-card">
-
-        <div class="about-photo">
-
-            <img src="img/profile.jpg" alt="Foto Profil Saya">
-
-        </div>
-
-
-        <div class="about-information">
-
-            <span class="section-overline">CERITA PRIBADIKU</span>
-
-            <h2>Halo, saya <span>[REINy].</span></h2>
-
-            <p>
-                Saya adalah seseorang yang menikmati kehidupan
-                dengan cara saya sendiri. Saya percaya bahwa setiap
-                orang memiliki cerita, perjalanan, dan sudut pandang
-                kehidupan yang berbeda.
-            </p>
-
-            <p>
-                Terkadang saya senang menghabiskan waktu sendiri,
-                memikirkan masa depan, mempelajari hal-hal baru,
-                dan mencari tahu apa yang ditawarkan oleh kehidupan.
-            </p>
-
-            <p>
-                Ini adalah ruang pribadi saya, tempat untuk
-                menyimpan cerita, pemikiran, pengalaman,
-                dan berbagai kenangan dalam hidup.
-            </p>
-
-
-            <div class="personal-details">
-
-                <div>
-                    <span>KEPRIBADIAN</span>
-                    <h4>Tenang & Mandiri</h4>
                 </div>
 
-                <div>
-                    <span>MINAT</span>
-                    <h4>Teknologi & Trading</h4>
-                </div>
-
-                <div>
-                    <span>HOBI</span>
-                    <h4>Belajar & Menjelajah</h4>
-                </div>
-
-                <div>
-                    <span>MOTTO HIDUP</span>
-                    <h4>Terus Melangkah Maju.</h4>
+                <div class="welcome-decoration">
+                    <i class="fa-solid fa-moon"></i>
                 </div>
 
             </div>
 
-        </div>
 
-    </div>
+            <!-- INFORMASI SINGKAT -->
 
-</section>
+            <div class="quick-grid">
 
+                <div class="quick-card">
 
-<!-- AKTIVITAS HARIAN -->
+                    <div class="quick-icon purple">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
 
-<section class="content-section" id="daily">
+                    <div>
+                        <span>HARI INI</span>
+                        <h3 id="todayName">Senin</h3>
+                        <small>Awal yang baru.</small>
+                    </div>
 
-    <div class="section-heading">
-
-        <div>
-            <span class="section-overline">KEGIATAN SEHARI-HARI</span>
-            <h2>Aktivitas Harian</h2>
-            <p>Sekilas tentang kegiatan sehari-hariku.</p>
-        </div>
-
-    </div>
+                </div>
 
 
-    <div class="activities-grid">
+                <div class="quick-card">
 
-        <div class="activity-card">
+                    <div class="quick-icon blue">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
 
-            <div class="activity-top">
-                <i class="fa-solid fa-sun"></i>
-                <span>06:00 - 09:00</span>
+                    <div>
+                        <span>JURNAL SAYA</span>
+                        <h3 id="journalCount">0 Catatan</h3>
+                        <small>Cerita keseharianmu.</small>
+                    </div>
+
+                </div>
+
+
+                <div class="quick-card">
+
+                    <div class="quick-icon orange">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+
+                    <div>
+                        <span>TARGET SAYA</span>
+                        <h3 id="goalCount">0 Target</h3>
+                        <small>Teruslah melangkah maju.</small>
+                    </div>
+
+                </div>
+
             </div>
 
-            <h3>Pagi Hari</h3>
 
-            <p>
-                Bangun tidur, mempersiapkan diri, menikmati
-                suasana pagi, dan bersiap menjalani hari baru.
-            </p>
+            <!-- PEMIKIRAN HARI INI -->
 
-        </div>
+            <div class="thought-card">
 
+                <div>
+                    <span class="section-overline">RENUNGAN HARI INI</span>
 
-        <div class="activity-card">
+                    <h2 id="dailyThought">
+                        Setiap hari adalah kesempatan baru untuk berkembang.
+                    </h2>
 
-            <div class="activity-top">
-                <i class="fa-solid fa-cloud-sun"></i>
-                <span>09:00 - 15:00</span>
+                    <p>
+                        Kamu tidak harus memahami semuanya sekarang.
+                        Cukup lakukan satu langkah kecil setiap harinya.
+                    </p>
+                </div>
+
+                <i class="fa-solid fa-feather-pointed"></i>
+
             </div>
 
-            <h3>Siang Hari</h3>
-
-            <p>
-                Fokus pada berbagai aktivitas, pekerjaan,
-                belajar, dan melakukan hal-hal yang diminati.
-            </p>
-
-        </div>
+        </section>
 
 
-        <div class="activity-card">
+        <!-- TENTANG SAYA -->
 
-            <div class="activity-top">
-                <i class="fa-solid fa-cloud-moon"></i>
-                <span>15:00 - 18:00</span>
+        <section class="content-section" id="about">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-overline">KENALI DIRIKU</span>
+                    <h2>Tentang Saya</h2>
+                    <p>Sedikit perkenalan tentang siapa diriku.</p>
+                </div>
+
             </div>
 
-            <h3>Sore Hari</h3>
 
-            <p>
-                Beristirahat sejenak, menikmati musik,
-                bersantai, dan melakukan hal-hal yang disukai.
-            </p>
+            <div class="about-card">
 
-        </div>
+                <div class="about-photo">
+                    <img src="img/profile.jpg" alt="Foto profil saya" loading="lazy">
+                </div>
 
 
-        <div class="activity-card">
+                <div class="about-information">
 
-            <div class="activity-top">
-                <i class="fa-solid fa-moon"></i>
-                <span>18:00 - 00:00</span>
+                    <span class="section-overline">CERITA PRIBADIKU</span>
+
+                    <h2>Halo, saya <span>REINY.</span></h2>
+
+                    <p>
+                        Saya adalah seseorang yang menikmati kehidupan
+                        dengan cara saya sendiri. Saya percaya bahwa setiap
+                        orang memiliki cerita, perjalanan, dan sudut pandang
+                        kehidupan yang berbeda.
+                    </p>
+
+                    <p>
+                        Terkadang saya senang menghabiskan waktu sendiri,
+                        memikirkan masa depan, mempelajari hal-hal baru,
+                        dan mencari tahu apa yang ditawarkan oleh kehidupan.
+                    </p>
+
+                    <p>
+                        Ini adalah ruang pribadi saya, tempat untuk
+                        menyimpan cerita, pemikiran, pengalaman,
+                        dan berbagai kenangan dalam hidup.
+                    </p>
+
+
+                    <div class="personal-details">
+
+                        <div>
+                            <span>KEPRIBADIAN</span>
+                            <h4>Tenang & Mandiri</h4>
+                        </div>
+
+                        <div>
+                            <span>MINAT</span>
+                            <h4>Teknologi & Trading</h4>
+                        </div>
+
+                        <div>
+                            <span>HOBI</span>
+                            <h4>Belajar & Menjelajah</h4>
+                        </div>
+
+                        <div>
+                            <span>MOTTO HIDUP</span>
+                            <h4>Terus Melangkah Maju.</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <h3>Malam Hari</h3>
-
-            <p>
-                Menghabiskan waktu pribadi, merenungkan hari ini,
-                menyusun rencana, dan mempersiapkan hari esok.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
+        </section>
 
 
-<!-- JURNAL -->
+        <!-- AKTIVITAS HARIAN -->
 
-<section class="content-section" id="journal">
+        <section class="content-section" id="daily">
 
-    <div class="section-heading">
+            <div class="section-heading">
 
-        <div>
-            <span class="section-overline">CATATAN HARIANKU</span>
-            <h2>Jurnal Pribadi</h2>
-            <p>Tuangkan pemikiran dan pengalamanmu di sini.</p>
-        </div>
+                <div>
+                    <span class="section-overline">KEGIATAN SEHARI-HARI</span>
+                    <h2>Aktivitas Harian</h2>
+                    <p>Sekilas tentang kegiatan sehari-hariku.</p>
+                </div>
 
-    </div>
+            </div>
 
 
-    <div class="journal-card">
+            <div class="activities-grid">
 
-        <label for="journalInput">
-            BAGAIMANA HARIMU HARI INI?
-        </label>
+                <div class="activity-card">
 
-        <textarea
-            id="journalInput"
-            placeholder="Tuliskan apa saja tentang harimu...
+                    <div class="activity-top">
+                        <i class="fa-solid fa-sun"></i>
+                        <span>06:00 - 09:00</span>
+                    </div>
+
+                    <h3>Pagi Hari</h3>
+
+                    <p>
+                        Bangun tidur, mempersiapkan diri, menikmati
+                        suasana pagi, dan bersiap menjalani hari baru.
+                    </p>
+
+                </div>
+
+
+                <div class="activity-card">
+
+                    <div class="activity-top">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                        <span>09:00 - 15:00</span>
+                    </div>
+
+                    <h3>Siang Hari</h3>
+
+                    <p>
+                        Fokus pada berbagai aktivitas, pekerjaan,
+                        belajar, dan melakukan hal-hal yang diminati.
+                    </p>
+
+                </div>
+
+
+                <div class="activity-card">
+
+                    <div class="activity-top">
+                        <i class="fa-solid fa-cloud-moon"></i>
+                        <span>15:00 - 18:00</span>
+                    </div>
+
+                    <h3>Sore Hari</h3>
+
+                    <p>
+                        Beristirahat sejenak, menikmati musik,
+                        bersantai, dan melakukan hal-hal yang disukai.
+                    </p>
+
+                </div>
+
+
+                <div class="activity-card">
+
+                    <div class="activity-top">
+                        <i class="fa-solid fa-moon"></i>
+                        <span>18:00 - 00:00</span>
+                    </div>
+
+                    <h3>Malam Hari</h3>
+
+                    <p>
+                        Menghabiskan waktu pribadi, merenungkan hari ini,
+                        menyusun rencana, dan mempersiapkan hari esok.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- JURNAL PRIBADI -->
+
+        <section class="content-section" id="journal">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-overline">CATATAN HARIANKU</span>
+                    <h2>Jurnal Pribadi</h2>
+                    <p>Tuangkan pemikiran dan pengalamanmu di sini.</p>
+                </div>
+
+            </div>
+
+
+            <div class="journal-card">
+
+                <label for="journalInput">
+                    BAGAIMANA HARIMU HARI INI?
+                </label>
+
+                <textarea
+                    id="journalInput"
+                    placeholder="Tuliskan apa saja tentang harimu...
 
 Apa yang kamu lakukan hari ini?
 Apa yang membuatmu bahagia?
 Apa yang membuatmu berpikir?
-Apa yang kamu pelajari hari ini?"
-        ></textarea>
+Apa yang kamu pelajari hari ini?"></textarea>
 
 
-        <div class="journal-bottom">
+                <div class="journal-bottom">
 
-            <span id="journalDate"></span>
+                    <span id="journalDate"></span>
 
-            <button id="saveJournal">
-                <i class="fa-solid fa-floppy-disk"></i>
-                Simpan Catatan
-            </button>
+                    <button type="button" id="saveJournal">
+                        <i class="fa-solid fa-floppy-disk"></i>
+                        Simpan Catatan
+                    </button>
 
-        </div>
+                </div>
 
-    </div>
-
-
-    <div class="saved-journals">
-
-        <h3>Catatan Sebelumnya</h3>
-
-        <div id="journalList"></div>
-
-    </div>
-
-</section>
-
-
-<!-- TARGET -->
-
-<section class="content-section" id="goals">
-
-    <div class="section-heading">
-
-        <div>
-            <span class="section-overline">MASA DEPANKU</span>
-            <h2>Target Pribadi</h2>
-            <p>Langkah kecil dapat membawa perubahan besar.</p>
-        </div>
-
-    </div>
-
-
-    <div class="goal-card">
-
-        <div class="goal-input">
-
-            <input
-                type="text"
-                id="goalInput"
-                placeholder="Tuliskan target yang ingin kamu capai..."
-            >
-
-            <button id="addGoal">
-                <i class="fa-solid fa-plus"></i>
-                Tambah Target
-            </button>
-
-        </div>
-
-
-        <div id="goalList"></div>
-
-    </div>
-
-</section>
-
-
-<!-- MOTIVASI -->
-
-<section class="content-section" id="motivation">
-
-    <div class="section-heading">
-
-        <div>
-            <span class="section-overline">SAAT KAMU MERASA KEHILANGAN ARAH</span>
-            <h2>Waktu Untuk Dirimu Sendiri</h2>
-            <p>Terkadang kamu hanya membutuhkan sedikit pengingat.</p>
-        </div>
-
-    </div>
-
-
-    <div class="motivation-card">
-
-        <i class="fa-solid fa-heart heart-icon"></i>
-
-        <h2 id="motivationTitle">
-            Sedang Kehilangan Arah?
-        </h2>
-
-        <p id="motivationText">
-            Tarik napas dalam-dalam. Kamu tidak harus
-            menyelesaikan semuanya sekarang.
-        </p>
-
-        <button id="motivationButton">
-            Berikan Saya Pengingat
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
-
-    </div>
-
-
-    <!-- PENGATURAN PENGINGAT -->
-
-    <div class="notification-card">
-
-        <div class="notification-info">
-
-            <div class="notification-icon">
-                <i class="fa-solid fa-bell"></i>
             </div>
 
-            <div>
-                <h3>Notifikasi Harian</h3>
-                <p>Terima pengingat setiap pagi dan malam.</p>
+
+            <div class="saved-journals">
+
+                <h3>Catatan Sebelumnya</h3>
+
+                <div id="journalList"></div>
+
             </div>
 
-        </div>
+        </section>
 
 
-        <div class="notification-times">
+        <!-- TARGET PRIBADI -->
 
-            <span>
-                <i class="fa-solid fa-sun"></i>
-                Pagi: 07:00
-            </span>
+        <section class="content-section" id="goals">
 
-            <span>
-                <i class="fa-solid fa-moon"></i>
-                Malam: 21:00
-            </span>
+            <div class="section-heading">
 
-        </div>
+                <div>
+                    <span class="section-overline">MASA DEPANKU</span>
+                    <h2>Target Pribadi</h2>
+                    <p>Langkah kecil dapat membawa perubahan besar.</p>
+                </div>
 
-
-        <button id="enableNotification">
-            Aktifkan Notifikasi
-        </button>
-
-        <p class="notification-status" id="notificationStatus">
-            Notifikasi belum diaktifkan.
-        </p>
-
-    </div>
-
-</section>
+            </div>
 
 
-<!-- GALERI -->
+            <div class="goal-card">
 
-<section class="content-section" id="gallery">
+                <div class="goal-input">
 
-    <div class="section-heading">
+                    <input
+                        type="text"
+                        id="goalInput"
+                        placeholder="Tuliskan target yang ingin kamu capai..."
+                        aria-label="Target yang ingin dicapai">
 
-        <div>
-            <span class="section-overline">KENANGAN SAYA</span>
-            <h2>Galeri Kehidupan</h2>
-            <p>Momen sederhana, kenangan yang berharga.</p>
-        </div>
+                    <button type="button" id="addGoal">
+                        <i class="fa-solid fa-plus"></i>
+                        Tambah Target
+                    </button>
 
-    </div>
-
-
-    <div class="gallery-grid">
-
-        <div class="gallery-item">
-            <img src="img/memory1.jpg" alt="Kenangan 1">
-            <span>Salah satu momen dalam hidupku.</span>
-        </div>
-
-        <div class="gallery-item">
-            <img src="img/memory2.jpg" alt="Kenangan 2">
-            <span>Kenangan sederhana.</span>
-        </div>
-
-        <div class="gallery-item">
-            <img src="img/memory3.jpg" alt="Kenangan 3">
-            <span>Hidup terus berjalan.</span>
-        </div>
-
-    </div>
-
-</section>
+                </div>
 
 
-<!-- BAGIAN BAWAH -->
+                <div id="goalList"></div>
 
-<footer>
+            </div>
 
-    <h2>MY<span>LIFE.</span></h2>
-
-    <p>
-        Hidupku, ceritaku, perjalananku.
-    </p>
-
-    <div class="footer-links">
-
-        <a href="#home">Beranda</a>
-        <a href="#about">Tentang Saya</a>
-        <a href="#journal">Jurnal</a>
-        <a href="#gallery">Kenangan</a>
-
-    </div>
-
-    <small>
-        © 2026 MY LIFE. Hak Cipta Dilindungi.
-    </small>
-
-</footer>
+        </section>
 
 
-</main>
+        <!-- MOTIVASI -->
+
+        <section class="content-section" id="motivation">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-overline">SAAT KAMU MERASA KEHILANGAN ARAH</span>
+                    <h2>Waktu Untuk Dirimu Sendiri</h2>
+                    <p>Terkadang kamu hanya membutuhkan sedikit pengingat.</p>
+                </div>
+
+            </div>
 
 
-<!-- LAPISAN MENU PONSEL -->
+            <div class="motivation-card">
 
-<div class="sidebar-overlay" id="sidebarOverlay"></div>
+                <i class="fa-solid fa-heart heart-icon"></i>
+
+                <h2 id="motivationTitle">
+                    Sedang Kehilangan Arah?
+                </h2>
+
+                <p id="motivationText">
+                    Tarik napas dalam-dalam. Kamu tidak harus
+                    menyelesaikan semuanya sekarang.
+                </p>
+
+                <button type="button" id="motivationButton">
+                    Berikan Saya Pengingat
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </div>
 
 
-<script src="script.js"></script>
+            <!-- NOTIFIKASI -->
+
+            <div class="notification-card">
+
+                <div class="notification-info">
+
+                    <div class="notification-icon">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+
+                    <div>
+                        <h3>Notifikasi Harian</h3>
+                        <p>Terima pengingat setiap pagi dan malam.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="notification-times">
+
+                    <span>
+                        <i class="fa-solid fa-sun"></i>
+                        Pagi: 07:00
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-moon"></i>
+                        Malam: 21:00
+                    </span>
+
+                </div>
+
+
+                <button type="button" id="enableNotification">
+                    Aktifkan Notifikasi
+                </button>
+
+                <p class="notification-status" id="notificationStatus">
+                    Notifikasi belum diaktifkan.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALERI KEHIDUPAN -->
+
+        <section class="content-section" id="gallery">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-overline">KENANGAN SAYA</span>
+                    <h2>Galeri Kehidupan</h2>
+                    <p>Momen sederhana, kenangan yang berharga.</p>
+                </div>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img src="img/memory1.jpg" alt="Kenangan pertama" loading="lazy">
+                    <span>Salah satu momen dalam hidupku.</span>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="img/memory2.jpg" alt="Kenangan kedua" loading="lazy">
+                    <span>Kenangan sederhana.</span>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="img/memory3.jpg" alt="Kenangan ketiga" loading="lazy">
+                    <span>Hidup terus berjalan.</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <h2>MY<span>LIFE.</span></h2>
+
+            <p>
+                Hidupku, ceritaku, perjalananku.
+            </p>
+
+            <div class="footer-links">
+
+                <a href="#home">Beranda</a>
+                <a href="#about">Tentang Saya</a>
+                <a href="#journal">Jurnal</a>
+                <a href="#gallery">Kenangan</a>
+
+            </div>
+
+            <small>
+                © 2026 MY LIFE. Hak Cipta Dilindungi.
+            </small>
+
+        </footer>
+
+
+    </main>
+
+
+    <!-- OVERLAY MENU PONSEL -->
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
